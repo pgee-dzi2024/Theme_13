@@ -5,12 +5,297 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb34ddfe-8f2e-42a4-837b-9f817d5576f2" name="Changes" comment="След инсталиране на Django">
-      <change afterPath="$PROJECT_DIR$/MyProject/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyProject/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/.idea/ComplaintManagement-Django.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/01 PROJECT INFO.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/01 PROJECT INFO.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/migrations/0002_alter_profile_branch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/material-dashboard-rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/material-dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/material-dashboard.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/material-dashboard.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/css/simple-sidebar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/extra/jquery/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/img/adminn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/img/bars-chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/img/bars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/img/form.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/img/seclgn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/img/solved.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/core/bootstrap-material-design.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/core/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/core/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/material-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/material-dashboard.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/material-dashboard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/arrive.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/bootstrap-notify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/bootstrap-selectpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/bootstrap-tagsinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/chartist.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/jasny-bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/jquery-jvectormap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/jquery.bootstrap-wizard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/jquery.tagsinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/nouislider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/perfect-scrollbar.jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/js/plugins/sweetalert2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_alerts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_checkboxes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_core-bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_example-pages.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_fixed-plugin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_footers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_headers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_info-areas.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_popups.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_radios.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_ripples.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_sidebar-and-main-panel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_social-buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_tabs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_togglebutton.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_navbar-align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_borders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_embed.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_position.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_screenreaders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_sizing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/bootstrap/scss/utilities/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/cards/_card-plain.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/cards/_card-profile.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/cards/_card-stats.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_animations.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_chartist.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_colored-shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_drawer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_navbar-colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_navs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_sidebar-color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_transparency.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/mixins/_vendor-prefixes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/plugins/_animate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/plugins/_chartist.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/plugins/_perfect-scrollbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_body.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_bootstrap-material-design-base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_bootstrap-material-design.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_brand.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_colors-map.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_drawer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_modals.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_snackbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_state.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/static/ComplaintMS/scss/material-dashboard/variables/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/AllComplaints.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/Complaints.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/aboutus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/account_activation_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/change_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/change_password_g.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/comptotal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/counter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/index1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/password_reset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/password_reset_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/side.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/signin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/solved.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/templates/ComplaintMS/solvedcomplaint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/tokens.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ComplaintMS/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/web/01 PROJECT INFO.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/web/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/web/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/web/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/web/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/работна/docs/реализация.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Theme_13.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Theme_13.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/MyProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/MyProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/MyProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/MyProject/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,23 +312,42 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pgee-dzi2024&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6eb9df4d-393f-4fb5-bfce-5a9402d13294" />
+        <option name="url" value="https://github.com/pgee-dzi2024/Theme_13.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2aiyskthSBV3Mnn4x8SCTSkqOES" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/rabotna/ComplaintManagement-Django",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "last_opened_file_path": "C:/DZI_2024/Theme_13/ComplaintManagement-Django",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -54,7 +358,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+        <option value="bundled-python-sdk-d68999036c7f-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.14475.56" />
       </set>
     </attachedChunks>
   </component>
@@ -79,6 +383,7 @@
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="След инсталиране на Django" />
     <option name="LAST_COMMIT_MESSAGE" value="След инсталиране на Django" />
   </component>
