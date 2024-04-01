@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>РАДИС - клиент</title>
+  <link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="assets/css/styles.min.css" />
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+       data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="client.html" class="text-nowrap logo-img">
+            <img src="assets/images/logos/favicon.png" width="34" alt="" />&nbsp; &nbsp;РАДИС
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Начало</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Контролен панел</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Заявки</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-article"></i>
+                </span>
+                <span class="hide-menu">Нова заявка</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-alert-circle"></i>
+                </span>
+                <span class="hide-menu">Всички заявки</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-alert-circle"></i>
+                </span>
+                <span class="hide-menu">Текущи заявки</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-cards"></i>
+                </span>
+                <span class="hide-menu">Закрити заявки</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Профил</span>
+            </li>
+            <!--
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user"></i>
+                </span>
+                <span class="hide-menu">Детайли</span>
+              </a>
+            </li>
+            -->
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-logout"></i>
+                </span>
+                <span class="hide-menu">Изход</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                <i class="ti ti-bell-ringing"></i>
+                <div class="notification bg-primary rounded-circle"></div>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <h1>Контролен панел</h1>
+          </div>
+        </nav>
+      </header>
+      <!--  Header End -->
+
+      <!-- СЕКЦИЯ КОНТРОЛЕН ПАНЕЛ - начало -->
+      <div class="container-fluid" style="max-width: 1800px;">
+        <div class="row">
+          <!--  Лява колона -->
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <!-- Последни действия - начало-->
+            <div class="card w-100" style="background-color: #13deb914" >
+              <div class="card-body p-4">
+                <div class="mb-4">
+                  <h5 class="card-title fw-semibold">Последни действия</h5>
+                </div>
+                <ul class="timeline-widget mb-0 position-relative mb-n5">
+                  <li class="timeline-item d-flex position-relative overflow-hidden">
+                    <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                      <span class="timeline-badge border-2 border border-success flex-shrink-0 my-8"></span>
+                      <span class="timeline-badge-border d-block flex-shrink-0" style="background-color: #000;"></span>
+                    </div>
+                    <div class="timeline-time text-dark flex-shrink-0 text-end">&nbsp&nbsp12/02/2024 12:51</div>
+                    <div class="timeline-desc fs-3 text-dark mt-n1">Приключена е заявка #34</div>
+                  </li>
+                  <li class="timeline-item d-flex position-relative overflow-hidden">
+                    <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                      <span class="timeline-badge border-2 border border-warning flex-shrink-0 my-8"></span>
+                      <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                    </div>
+                    <div class="timeline-time text-dark flex-shrink-0 text-end">&nbsp&nbsp12/02/2024 12:51</div>
+                    <div class="timeline-desc fs-3 text-dark mt-n1">Обработва се заявка #34</div>
+                  </li>
+                  <li class="timeline-item d-flex position-relative overflow-hidden">
+                    <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                      <span class="timeline-badge border-2 border border-danger flex-shrink-0 my-8"></span>
+                      <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                    </div>
+                    <div class="timeline-time text-dark flex-shrink-0 text-end">&nbsp&nbsp12/02/2024 12:51</div>
+                    <div class="timeline-desc fs-3 text-dark mt-n1">Приета е заявка #34</div>
+                  </li>
+                  <li class="timeline-item d-flex position-relative overflow-hidden">
+                    <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                      <span class="timeline-badge border-2 border border-info flex-shrink-0 my-8"></span>
+                      <!-- <span class="timeline-badge-border d-block flex-shrink-0"></span> -->
+                    </div>
+                    <div class="timeline-time text-dark flex-shrink-0 text-end">&nbsp&nbsp12/02/2024 12:51</div>
+                    <div class="timeline-desc fs-3 text-dark mt-n1">Изпратена е заявка #34</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Последни действия - край-->
+          </div>
+          <!--  Дясна колона -->
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <!-- Статистика - начало -->
+            <div class="card w-100" style="background-color: #138cde14;">
+              <div class="card-body p-4">
+                <h5 class="card-title fw-semibold mb-4">Статистика</h5>
+                <div class="table-responsive">
+                  <table class="table text-nowrap mb-0 align-middle">
+                    <thead class="text-dark fs-4">
+                      <tr>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Тип задачи</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Брой</h6>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-primary">
+                        <td class="border-bottom-0">
+                            <span class="fw-normal">Поставени</span>
+                        </td>
+                        <td class="border-bottom-0">
+                          <span class="fw-normal">123</span>
+                        </td>
+                      </tr>
+                      <tr class="table-danger">
+                        <td class="border-bottom-0">
+                            <span class="fw-normal">Със статус "Приета"</span>
+                        </td>
+                        <td class="border-bottom-0">
+                          <span class="fw-normal">123</span>
+                        </td>
+                      </tr>
+                      <tr class="table-warning">
+                        <td class="border-bottom-0">
+                            <span class="fw-normal">Със статус "Работи се"</span>
+                        </td>
+                        <td class="border-bottom-0">
+                          <span class="fw-normal">123</span>
+                        </td>
+                      </tr>
+                      <tr class="table-success">
+                        <td class="border-bottom-0">
+                            <span class="fw-normal">Със статус "Приключена"</span>
+                        </td>
+                        <td class="border-bottom-0">
+                          <span class="fw-normal">123</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>                
+            <!-- Статистика край - край -->
+          </div>
+        </div>
+        <div class="row">
+          <!-- Последни заявки - начало -->
+          <div class="row">
+            <div class="col-12 d-flex align-items-stretch">                
+              <div class="card w-100" style="background-color: #138cde14;">
+                <div class="card-body p-4">
+                  <h5 class="card-title fw-semibold mb-4">Последни заявки</h5>
+                  <div class="table-responsive">
+                    <table class="table text-nowrap mb-0 align-middle">
+                      <thead class="text-dark fs-4">
+                        <tr>
+                          <th class="border-bottom-0" style="width:5%">
+                            <h6 class="fw-semibold mb-0">Id</h6>
+                          </th>
+                          <th class="border-bottom-0" style="width:15%">
+                            <h6 class="fw-semibold mb-0">Статус</h6>
+                          </th>
+                          <th class="border-bottom-0" style="width:15%">
+                            <h6 class="fw-semibold mb-0">Дата/час</h6>
+                          </th>
+                          <th class="border-bottom-0" style="width:65%">
+                            <h6 class="fw-semibold mb-0">Проблем</h6>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="border-bottom-0"><h6 class="fw-semibold mb-0">1</h6></td>
+                          <td class="border-bottom-0">
+                            <div class="d-flex align-items-center gap-2">
+                              <span class="badge bg-success rounded-3 fw-semibold">Затворена</span>
+                            </div>
+                          </td>
+                          <td class="border-bottom-0">
+                              <span class="fw-normal">12/02/2024 12:51</span>
+                          </td>
+                          <td class="border-bottom-0">
+                            <p class="mb-0 fw-normal">Няма интернет в корпус Б</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="border-bottom-0"><h6 class="fw-semibold mb-0">1</h6></td>
+                          <td class="border-bottom-0">
+                            <div class="d-flex align-items-center gap-2">
+                              <span class="badge bg-warning rounded-3 fw-semibold">Работи се</span>
+                            </div>
+                          </td>
+                          <td class="border-bottom-0">
+                              <span class="fw-normal">12/02/2024 12:51</span>
+                          </td>
+                          <td class="border-bottom-0">
+                            <p class="mb-0 fw-normal">Няма интернет в корпус Б</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="border-bottom-0"><h6 class="fw-semibold mb-0">1</h6></td>
+                          <td class="border-bottom-0">
+                            <div class="d-flex align-items-center gap-2">
+                              <span class="badge bg-danger rounded-3 fw-semibold">Приета</span>
+                            </div>
+                          </td>
+                          <td class="border-bottom-0">
+                              <span class="fw-normal">12/02/2024 12:51</span>
+                          </td>
+                          <td class="border-bottom-0">
+                            <p class="mb-0 fw-normal">Няма интернет в корпус Б</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="border-bottom-0"><h6 class="fw-semibold mb-0">1</h6></td>
+                          <td class="border-bottom-0">
+                            <div class="d-flex align-items-center gap-2">
+                              <span class="badge bg-primary rounded-3 fw-semibold">Подадена</span>
+                            </div>
+                          </td>
+                          <td class="border-bottom-0">
+                              <span class="fw-normal">12/02/2024 12:51</span>
+                          </td>
+                          <td class="border-bottom-0">
+                            <p class="mb-0 fw-normal">Няма интернет в корпус Б</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>                
+            </div>
+          </div>
+          <!-- Последни заявки - край -->
+        </div>
+      </div>
+      <!-- СЕКЦИЯ КОНТРОЛЕН ПАНЕЛ - край -->
+
+      <!-- СЕКЦИЯ НОВА ЗАЯВКА - начало -->
+      <div class="container-fluid">
+        <div class="container-fluid">
+          <div class="card" style="background-color: #13deb914;">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-4"></h5>
+              <div class="card">
+                <div class="card-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="theme" class="form-label">Тема:</label>
+                      <input type="text" class="form-control" id="theme" aria-describedby="themeHelp">
+                      <div id="themeHelp" class="form-text">Кратко описание на проблема.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="subject" class="form-label">Детайли:</label>
+                      <textarea  class="form-control" id="subject" aria-describedby="subjectHelp" rows="18">
+                      </textarea>                 
+                      <div id="subjectHelp" class="form-text">Пълно описание на проблема.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Изпрати</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- СЕКЦИЯ НОВА ЗАЯВКА - край -->
+
+      <!-- СЕКЦИЯ СПИСЪК ЗАЯВКИ - начало -->
+      <div class="container-fluid" style="max-width: 1800px;">
+          <div class="container-fluid">   
+            <div class="card" style="background-color: #13deb914;">             
+              <div class="card-body">
+                <h5 class="card-title fw-semibold mb-4"></h5>
+                <div class="card w-100" >
+                  <div class="card-body p-4">
+                    <div class="table-responsive">
+                      <table class="table text-nowrap mb-0 align-middle">
+                        <thead class="text-dark fs-4">
+                          <tr>
+                            <th class="border-bottom-0" style="width:5%">
+                              <h6 class="fw-semibold mb-0">Id</h6>
+                            </th>
+                            <th class="border-bottom-0" style="width:10%">
+                              <h6 class="fw-semibold mb-0">Статус</h6>
+                            </th>
+                            <th class="border-bottom-0" style="width:10%">
+                              <h6 class="fw-semibold mb-0">Дата/час</h6>
+                            </th>
+                            <th class="border-bottom-0" style="width:65%">
+                              <h6 class="fw-semibold mb-0">Заявка</h6>
+                            </th >
+                            <th class="border-bottom-0" style="width:10%"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="border-bottom-0"><h6 class="fw-semibold mb-0">1</h6></td>
+                            <td class="border-bottom-0">
+                              <div class="d-flex align-items-center gap-2">
+                                <span class="badge bg-success rounded-3 fw-semibold">Затворена</span>
+                              </div>
+                            </td>
+                            <td class="border-bottom-0">
+                                <span class="fw-normal">12/02/2024 12:51</span>
+                            </td>
+                            <td class="border-bottom-0">
+                              <p class="mb-0 fw-normal">Няма интернет в корпус Б</p>
+                            </td>
+                            <td class="border-bottom-0">
+                              <button type="button" class="btn btn-success m-1">Виж детайли</button>    
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="border-bottom-0"><h6 class="fw-semibold mb-0">1</h6></td>
+                            <td class="border-bottom-0">
+                              <div class="d-flex align-items-center gap-2">
+                                <span class="badge bg-warning rounded-3 fw-semibold">Работи се</span>
+                              </div>
+                            </td>
+                            <td class="border-bottom-0">
+                                <span class="fw-normal">12/02/2024 12:51</span>
+                            </td>
+                            <td class="border-bottom-0">
+                              <p class="mb-0 fw-normal">Няма интернет в корпус Б</p>
+                            </td>
+                            <td class="border-bottom-0">
+                              <button type="button" class="btn btn-warning m-1">Виж детайли</button>    
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="border-bottom-0"><h6 class="fw-semibold mb-0">1</h6></td>
+                            <td class="border-bottom-0">
+                              <div class="d-flex align-items-center gap-2">
+                                <span class="badge bg-danger rounded-3 fw-semibold">Приета</span>
+                              </div>
+                            </td>
+                            <td class="border-bottom-0">
+                                <span class="fw-normal">12/02/2024 12:51</span>
+                            </td>
+                            <td class="border-bottom-0">
+                              <p class="mb-0 fw-normal">Няма интернет в корпус Б</p>
+                            </td>
+                            <td class="border-bottom-0">
+                              <button type="button" class="btn btn-danger m-1">Виж детайли</button>    
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="border-bottom-0"><h6 class="fw-semibold mb-0">1</h6></td>
+                            <td class="border-bottom-0">
+                              <div class="d-flex align-items-center gap-2">
+                                <span class="badge bg-primary rounded-3 fw-semibold">Подадена</span>
+                              </div>
+                            </td>
+                            <td class="border-bottom-0">
+                                <span class="fw-normal">12/02/2024 12:51</span>
+                            </td>
+                            <td class="border-bottom-0">
+                              <p class="mb-0 fw-normal">Няма интернет в корпус Б</p>
+                            </td>
+                            <td class="border-bottom-0">
+                              <button type="button" class="btn btn-info m-1">Виж детайли</button>    
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+            </div>    
+          </div>
+      </div>
+      <!-- СЕКЦИЯ  - край -->
+
+      <!-- СЕКЦИЯ  ЗАЯВКА ПОДРОБНО - начало -->
+      <div class="container-fluid">
+        <div class="container-fluid">
+          <div class="card" style="background-color: #13deb914;">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-4">ЗАЯВКА #</h5>
+              <div class="card">
+                <div class="card-body">
+                  <form>
+                    <div class="mb-5">
+                      <label for="theme" class="form-label">Тема:</label>
+                      <p id="theme" style="margin-left: 100px;">Кратко описание на проблема.</p>
+                    </div>
+                    <div class="mb-5">
+                      <label for="subject" class="form-label">Детайли:</label>
+                      <p id="subject" style="margin-left: 100px;">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+                    </div>
+                    <div class="mb-5">
+                      <label for="timeline" class="form-label">Хронология:</label>
+                      <ul id="timeline" class="timeline-widget mb-0 position-relative mb-n5" style="margin-left: 100px;">
+                        <li class="timeline-item d-flex position-relative overflow-hidden">
+                          <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                            <span class="timeline-badge border-2 border border-success flex-shrink-0 my-8"></span>
+                            <span class="timeline-badge-border d-block flex-shrink-0" style="background-color: #000;"></span>
+                          </div>
+                          <div class="timeline-time text-dark flex-shrink-0 text-end">&nbsp&nbsp12/02/2024 12:51</div>
+                          <div class="timeline-desc fs-3 text-dark mt-n1">Приключена е заявка #34</div>
+                        </li>
+                        <li class="timeline-item d-flex position-relative overflow-hidden">
+                          <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                            <span class="timeline-badge border-2 border border-warning flex-shrink-0 my-8"></span>
+                            <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                          </div>
+                          <div class="timeline-time text-dark flex-shrink-0 text-end">&nbsp&nbsp12/02/2024 12:51</div>
+                          <div class="timeline-desc fs-3 text-dark mt-n1">Обработва се заявка #34</div>
+                        </li>
+                        <li class="timeline-item d-flex position-relative overflow-hidden">
+                          <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                            <span class="timeline-badge border-2 border border-danger flex-shrink-0 my-8"></span>
+                            <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                          </div>
+                          <div class="timeline-time text-dark flex-shrink-0 text-end">&nbsp&nbsp12/02/2024 12:51</div>
+                          <div class="timeline-desc fs-3 text-dark mt-n1">Приета е заявка #34</div>
+                        </li>
+                        <li class="timeline-item d-flex position-relative overflow-hidden">
+                          <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                            <span class="timeline-badge border-2 border border-info flex-shrink-0 my-8"></span>
+                            <!-- <span class="timeline-badge-border d-block flex-shrink-0"></span> -->
+                          </div>
+                          <div class="timeline-time text-dark flex-shrink-0 text-end">&nbsp&nbsp12/02/2024 12:51</div>
+                          <div class="timeline-desc fs-3 text-dark mt-n1">Изпратена е заявка #34</div>
+                        </li>
+                      </ul>
+                      </div>    
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- СЕКЦИЯ ЗАЯВКА ПОДРОБНО - край -->
+    </div>
+  </div>
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/sidebarmenu.js"></script>
+  <script src="assets/js/app.min.js"></script>
+  <script src="assets/libs/simplebar/dist/simplebar.js"></script>
+ </body>
+
+</html>

@@ -28,7 +28,6 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'django.contrib.sites',
-    'allauth', # new
-    'allauth.account', # new
+    'allauth',  # new
+    'allauth.account',  # new
     'allauth.socialaccount',
     'reportlab',
     'phonenumber_field', 
@@ -99,7 +98,6 @@ DATABASES = {
 }
 
 
-
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
@@ -141,30 +139,32 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = '/login_redirect/'
 LOGIN_URL = 'signin'
-LOGOUT_URL='logout'
-SESSION_EXPIRE_AT_BROWSER_CLOSE=  True
+LOGOUT_URL = 'logout'
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST='smtp.gmail.com'
-EMAIL_PORT=587
-EMAIL_HOST_USER = ''# add email address here
-EMAIL_HOST_PASSWORD = ''  #email password
-DEFAULT_FROM_EMAIL = ''# add email address here
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = ''  # add email address here
+EMAIL_HOST_PASSWORD = ''  # email password
+DEFAULT_FROM_EMAIL = ''  # add email address here
 EMAIL_USE_TLS = True
 
-#EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-#EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+# EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
 
 AUTHENTICATION_BACKENDS = (
-    # Needed to login by username in Django admin, regardless of `allauth`
+    # Needed to log in by username in Django admin, regardless of `allauth`
     "django.contrib.auth.backends.ModelBackend",
 
     # `allauth` specific authentication methods, such as login by e-mail
     "allauth.account.auth_backends.AuthenticationBackend",
 )
-SITE_ID=3
+SITE_ID = 3
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_UNIQUE_EMAIL = True
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

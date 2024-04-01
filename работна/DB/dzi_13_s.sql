@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Време на генериране:  5 март 2024 в 23:53
+-- Време на генериране:  1 апр 2024 в 20:01
 -- Версия на сървъра: 10.4.32-MariaDB
 -- Версия на PHP: 8.2.12
 
@@ -182,8 +182,9 @@ CREATE TABLE `auth_user` (
 --
 
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
-(1, 'pbkdf2_sha256$260000$nVdt1sDNCg5vXFKhM18evH$wAk+bfgfxjA2aTSkZHSICh2UgzQU8aGhyedEy6/duFc=', '2024-03-05 22:27:55.405585', 0, 'user1', 'UserFirstName', 'UserLastName', 'user@mysite.com', 0, 1, '2024-03-05 22:27:41.641847'),
-(2, 'pbkdf2_sha256$260000$m98LO1SotsGJL8ORjp7ob3$D3Iedn31zwNeT9uNYrxo66QTKRxj2tvq8zXPAYXDaws=', '2024-03-05 22:42:39.196291', 1, 'admin', '', '', '', 1, 1, '2024-03-05 22:42:27.030478');
+(1, 'pbkdf2_sha256$260000$nVdt1sDNCg5vXFKhM18evH$wAk+bfgfxjA2aTSkZHSICh2UgzQU8aGhyedEy6/duFc=', '2024-03-12 22:02:36.760063', 0, 'user1', 'UserFirstName', 'UserLastName', 'user@mysite.com', 0, 1, '2024-03-05 22:27:41.641847'),
+(2, 'pbkdf2_sha256$260000$m98LO1SotsGJL8ORjp7ob3$D3Iedn31zwNeT9uNYrxo66QTKRxj2tvq8zXPAYXDaws=', '2024-03-29 11:40:20.305260', 1, 'admin', '', '', '', 1, 1, '2024-03-05 22:42:27.030478'),
+(3, 'pbkdf2_sha256$260000$IhyRCQjk4RgTspA7QRSpM5$+BgD0kRJudouYuUA2VF18TzjRjK/Fx+gUy2hpC+ifsY=', '2024-03-27 22:12:34.183595', 0, 'u1', 'U', 'U', 'abc@abv.com', 0, 1, '2024-03-18 20:14:17.531550');
 
 -- --------------------------------------------------------
 
@@ -219,7 +220,7 @@ CREATE TABLE `auth_user_user_permissions` (
 
 DROP TABLE IF EXISTS `complaintms_complaint`;
 CREATE TABLE `complaintms_complaint` (
-  `id` int(11) NOT NULL,
+  `id` bigint(20) NOT NULL,
   `Subject` varchar(200) DEFAULT NULL,
   `Type_of_complaint` varchar(200) DEFAULT NULL,
   `Description` longtext DEFAULT NULL,
@@ -227,6 +228,14 @@ CREATE TABLE `complaintms_complaint` (
   `status` int(11) NOT NULL,
   `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Схема на данните от таблица `complaintms_complaint`
+--
+
+INSERT INTO `complaintms_complaint` (`id`, `Subject`, `Type_of_complaint`, `Description`, `Time`, `status`, `user_id`) VALUES
+(1, 'Оплакване 1', 'ClassRoom', 'адсдас СДа А\r\nс аСДА\r\nасдАСДА', '2024-03-13', 3, 1),
+(2, 'test 1', 'ClassRoom', 'tttt tttt 1111', '2024-03-28', 1, 2);
 
 -- --------------------------------------------------------
 
@@ -236,7 +245,7 @@ CREATE TABLE `complaintms_complaint` (
 
 DROP TABLE IF EXISTS `complaintms_grievance`;
 CREATE TABLE `complaintms_grievance` (
-  `id` int(11) NOT NULL,
+  `id` bigint(20) NOT NULL,
   `guser_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -261,7 +270,8 @@ CREATE TABLE `complaintms_profile` (
 
 INSERT INTO `complaintms_profile` (`user_id`, `collegename`, `contactnumber`, `type_user`, `Branch`) VALUES
 (1, 'College1', '0812345678', 'student', 'ComputerScience'),
-(2, '', '', 'student', 'InformationTechnology');
+(2, '', '', 'student', 'InformationTechnology'),
+(3, 'College1', '', 'student', 'InformationTechnology');
 
 -- --------------------------------------------------------
 
@@ -280,6 +290,13 @@ CREATE TABLE `django_admin_log` (
   `content_type_id` int(11) DEFAULT NULL,
   `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Схема на данните от таблица `django_admin_log`
+--
+
+INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`, `action_flag`, `change_message`, `content_type_id`, `user_id`) VALUES
+(1, '2024-03-28 17:20:33.901817', '2', 'admin', 2, '[{\"changed\": {\"fields\": [\"Status\"]}}]', 3, 2);
 
 -- --------------------------------------------------------
 
@@ -360,7 +377,8 @@ INSERT INTO `django_migrations` (`id`, `app`, `name`, `applied`) VALUES
 (24, 'sites', '0002_alter_domain_unique', '2024-03-05 22:20:26.433365'),
 (25, 'socialaccount', '0001_initial', '2024-03-05 22:20:27.006542'),
 (26, 'socialaccount', '0002_token_max_lengths', '2024-03-05 22:20:27.052534'),
-(27, 'socialaccount', '0003_extra_data_default_dict', '2024-03-05 22:20:27.069514');
+(27, 'socialaccount', '0003_extra_data_default_dict', '2024-03-05 22:20:27.069514'),
+(28, 'ComplaintMS', '0002_auto_20240320_0123', '2024-03-19 23:24:01.242062');
 
 -- --------------------------------------------------------
 
@@ -380,7 +398,14 @@ CREATE TABLE `django_session` (
 --
 
 INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
-('miv7d9oob1atr9a83xpc7c65bfsi74tc', '.eJxVjMsOwiAQAP-FsyHLoxI8evcbyMLuStXQpLQn478bkh70OjOZt0q4bzXtndc0k7ooq06_LGN5chuCHtjuiy5L29Y565How3Z9W4hf16P9G1TsdWyNgBihaIJHLEDOoHiK7JywlwyTxIkEMrvg85kIHAIGwmLZWF_U5wsHXTkB:1rhdUd:OSGKKI8_HRDjfUOV4wzydbJlLB7BqOysKBbz8dOIJfI', '2024-03-19 22:42:39.200295');
+('8wa67qt2aisdpohqul7t2f4hpgx4b51z', '.eJxVjMsOwiAQAP-FsyHLoxI8evcbyMLuStXQpLQn478bkh70OjOZt0q4bzXtndc0k7ooq06_LGN5chuCHtjuiy5L29Y565How3Z9W4hf16P9G1TsdWyNgBihaIJHLEDOoHiK7JywlwyTxIkEMrvg85kIHAIGwmLZWF_U5wsHXTkB:1rmJOQ:rvtKtjCQNjlzMThb76Hppj6hbV3o7xuCfUI-ZRiDH3o', '2024-04-01 20:15:34.706703'),
+('buk03h8sm3mexfqb11a0ikgrg84knriw', '.eJxVjMsOwiAQAP-FsyHLoxI8evcbyMLuStXQpLQn478bkh70OjOZt0q4bzXtndc0k7ooq06_LGN5chuCHtjuiy5L29Y565How3Z9W4hf16P9G1TsdWyNgBihaIJHLEDOoHiK7JywlwyTxIkEMrvg85kIHAIGwmLZWF_U5wsHXTkB:1rkAEB:KTg83YMx6qsrzWV8Y7MZpCUXgYOaa42TwKPBZSCkW-c', '2024-03-26 22:04:07.748434'),
+('evumoj9lhef8hukux4plutozfjajsxua', '.eJxVjEEOwiAQRe_C2hDqwAAu3fcMBIapVA0kpV0Z765NutDtf-_9lwhxW0vYOi9hzuIiQJx-txTpwXUH-R7rrUlqdV3mJHdFHrTLsWV-Xg_376DEXr41ZgUGPVtHZBVnrzKwI6U5Akx68DqZiQmYz9FajU4lREw0EBsyyOL9AeleOEE:1rpbVa:phcP2Dh7oLLQ-Fxvz8pk2-a1pvAZiGtfPGhxbkuMhRY', '2024-04-10 22:12:34.191022'),
+('h2434cahazgbx8jw36hg8zqxguct1hco', '.eJxVjMsOwiAQAP-FsyHLoxI8evcbyMLuStXQpLQn478bkh70OjOZt0q4bzXtndc0k7ooq06_LGN5chuCHtjuiy5L29Y565How3Z9W4hf16P9G1TsdWyNgBihaIJHLEDOoHiK7JywlwyTxIkEMrvg85kIHAIGwmLZWF_U5wsHXTkB:1rhq3M:iTzrmCYP-5L90juI4fVaVEBtdlfoHHjyKk-o20eQZTg', '2024-03-20 12:07:20.941441'),
+('jw2dy5cql76henevsgi5z5ak5jmwf18l', '.eJxVjEEOwiAQRe_C2hDqwAAu3fcMBIapVA0kpV0Z765NutDtf-_9lwhxW0vYOi9hzuIiQJx-txTpwXUH-R7rrUlqdV3mJHdFHrTLsWV-Xg_376DEXr41ZgUGPVtHZBVnrzKwI6U5Akx68DqZiQmYz9FajU4lREw0EBsyyOL9AeleOEE:1rmipJ:CzdXRnxpxxq6KcFLV9aBuYyM5tzFJyz0LkwqSt6SyVQ', '2024-04-02 23:25:01.965788'),
+('l7efmq7n14sh20o6zhqik7scybrwfdiv', '.eJxVjEEOwiAQRe_C2hDqwAAu3fcMBIapVA0kpV0Z765NutDtf-_9lwhxW0vYOi9hzuIiQJx-txTpwXUH-R7rrUlqdV3mJHdFHrTLsWV-Xg_376DEXr41ZgUGPVtHZBVnrzKwI6U5Akx68DqZiQmYz9FajU4lREw0EBsyyOL9AeleOEE:1rpFHC:8wqaERKWbEQpZEEBKanTjIOpmUZhInfnSa8GOSZRrUo', '2024-04-09 22:28:14.484069'),
+('pqg6k8jzip7q5z0md1eprneytpk6m76h', '.eJxVjEEOwiAQRe_C2hDqwAAu3fcMBIapVA0kpV0Z765NutDtf-_9lwhxW0vYOi9hzuIiQJx-txTpwXUH-R7rrUlqdV3mJHdFHrTLsWV-Xg_376DEXr41ZgUGPVtHZBVnrzKwI6U5Akx68DqZiQmYz9FajU4lREw0EBsyyOL9AeleOEE:1rpDPC:YN_xpwavgpACGj6tJrmw_pyCaXHXx-R3UQ9CSkAQw8k', '2024-04-09 20:28:22.594888'),
+('xnheya3h8dvazfmy6l2lqaddx7h1egmh', '.eJxVjMsOwiAQAP-FsyHLoxI8evcbyMLuStXQpLQn478bkh70OjOZt0q4bzXtndc0k7ooq06_LGN5chuCHtjuiy5L29Y565How3Z9W4hf16P9G1TsdWyNgBihaIJHLEDOoHiK7JywlwyTxIkEMrvg85kIHAIGwmLZWF_U5wsHXTkB:1rqAaq:lf9uewfewuG0xWifPG_-Ak14vXKHSuZuH5t3u9oZYmQ', '2024-04-12 11:40:20.312187');
 
 -- --------------------------------------------------------
 
@@ -652,7 +677,7 @@ ALTER TABLE `auth_permission`
 -- AUTO_INCREMENT for table `auth_user`
 --
 ALTER TABLE `auth_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `auth_user_groups`
@@ -670,19 +695,19 @@ ALTER TABLE `auth_user_user_permissions`
 -- AUTO_INCREMENT for table `complaintms_complaint`
 --
 ALTER TABLE `complaintms_complaint`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `complaintms_grievance`
 --
 ALTER TABLE `complaintms_grievance`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `django_admin_log`
 --
 ALTER TABLE `django_admin_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `django_content_type`
@@ -694,7 +719,7 @@ ALTER TABLE `django_content_type`
 -- AUTO_INCREMENT for table `django_migrations`
 --
 ALTER TABLE `django_migrations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `django_site`

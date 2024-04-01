@@ -3,3 +3,5 @@ django-suit~=2.0a1
 requests~=2.26.0
 django-crispy-forms~=1.13.0
 reportlab~=3.6.3
+djangorestframework~=3.15.1
+django-filter~=24.2
