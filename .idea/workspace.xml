@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eb34ddfe-8f2e-42a4-837b-9f817d5576f2" name="Changes" comment="писмени работи+">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/MyProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/MyProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/Source/InventoryManagement-Django/inventory/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/Source/InventoryManagement-Django/inventory/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/main/templates/main/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/main/templates/main/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715430025541</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="писмени работи+">
+      <option name="closed" value="true" />
+      <created>1715430251853</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715430251853</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
