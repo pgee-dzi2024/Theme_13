@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb34ddfe-8f2e-42a4-837b-9f817d5576f2" name="Changes" comment="писмени работи+">
+    <list default="true" id="eb34ddfe-8f2e-42a4-837b-9f817d5576f2" name="Changes" comment="Презентация, чернова">
+      <change afterPath="$PROJECT_DIR$/13 Радослава Топузова/pics/users.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13 Радослава Топузова/pics/vue.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13 Радослава Топузова/Защита теория.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/13 Радослава Топузова/Защита теория.pptx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715430251853</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Презентация, чернова">
+      <option name="closed" value="true" />
+      <created>1715522964373</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715522964373</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +142,7 @@
     <MESSAGE value="След инсталиране на Django" />
     <MESSAGE value="писмени работи" />
     <MESSAGE value="писмени работи+" />
-    <option name="LAST_COMMIT_MESSAGE" value="писмени работи+" />
+    <MESSAGE value="Презентация, чернова" />
+    <option name="LAST_COMMIT_MESSAGE" value="Презентация, чернова" />
   </component>
 </project>
